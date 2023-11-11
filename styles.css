@@ -1,0 +1,112 @@
+
+/* Reset some basic elements */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #f4f4f4;
+}
+
+nav .title {
+    font-size: 20px;
+    color: #000; /* Black color for the name */
+}
+
+nav .title strong {
+    font-weight: bold; /* Bold font for the name */
+    font-size: 24px; /* Larger font size for the name */
+}
+
+nav .title span {
+    font-size: 16px; /* Smaller font size for the subtitle */
+}
+
+nav .title span {
+    display: block;
+    font-weight: normal; /* Normal font for the subtitle */
+    color: #c0c0c0; /* Ghost/silver grey color for the subtitle */
+}
+
+nav .links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .links {
+    text-align: right;
+    padding: 10px 0;
+}
+
+nav .links a {
+    color: #000; /* Black color for the links */
+    text-decoration: none;
+    padding-left: 15px; /* Spacing between the links */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 700px) {
+    nav .title, nav .links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Ensure the footer is at the bottom of the page */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    margin-left: 0.5cm; /* Shift main content to the left by 1.5cm */ /* Shift main content to the right by 2cm */
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+li {
+    margin-bottom: 10px; /* Retain spacing between list items */
+}
